@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "name": "disqusjs-proxy",
+    "routes": [
+        {
+            "src": "/(.*)",
+            "headers": {
+                "cache-control": "public, max-age= 20"
+            },
+            "dest": "https://disqus.com/api/$1"
+        }
+    ],
+    "github": {
+        "enabled": true,
+        "autoJobCancelation": true
+    }
+}
