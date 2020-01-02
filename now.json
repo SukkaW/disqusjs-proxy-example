@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "name": "tg-api-proxy",
+    "alias": [
+        "tg.ghos.in"
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "https://api.telegram.org/$1"
+        }
+    ],
+    "github": {
+        "enabled": true,
+        "autoJobCancelation": true
+    }
+}
